@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "jira-tasks-load.thunderbird",
+  "description": "For the JIRA issues change notification load in message itself full view of issue!",
+  "version": "1.0",
+  "author": "Pavel Alexeev <Pahan@Hubbitus.info>",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "pahan@hubbitus.info",
+      "strict_min_version": "78.0"
+    }
+  },
+  "background": {
+    "page": "background.html"
+  },
+  "icons": {
+    "64": "images/internet.png",
+    "32": "images/internet-32px.png",
+    "16": "images/internet-16px.png"
+  },
+  "web_accessible_resources": [
+    "modules/jquery/jquery-3.6.4.js"
+  ],
+  "permissions": [
+    "messagesRead",
+    "messagesModify",
+    "webRequest",
+    "https://jira-new.gid.team/*"
+  ]
+}
