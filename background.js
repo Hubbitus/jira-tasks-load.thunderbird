@@ -4,7 +4,7 @@ messenger.messageDisplayScripts.register({
         { file: "modules/jquery/jquery-3.6.4.js" },
         { file: "messageDisplay/message-content-script.js" }
     ],
-//    css: [{ file: "messageDisplay/message-content-styles.css" }],
+    css: [{ file: "messageDisplay/message-content-styles.css" }],
 });
 
 /**
@@ -39,7 +39,7 @@ async function getIssueJiraLink(messageId){
     // so RegExp is the good tradeoff
     let rx = /<td .*?class="issue-key".+?<a href="([^"]+)"/s;
     let matches = rx.exec(html);
-    console.log('matches', matches);
+//    console.log('matches', matches);
     let issueJiraLink = matches[1];
     console.log('issueJiraLink: ', issueJiraLink);
     return issueJiraLink;
