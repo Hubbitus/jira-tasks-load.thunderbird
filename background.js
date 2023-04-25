@@ -39,10 +39,11 @@ async function getIssueJiraLink(messageId){
     // so RegExp is the good tradeoff
     let rx = /<td .*?class="issue-key".+?<a href="([^"]+)"/s;
     let matches = rx.exec(html);
-//    console.log('matches', matches);
-    let issueJiraLink = matches[1];
-    console.log('issueJiraLink: ', issueJiraLink);
-    return issueJiraLink;
+    if (!!matches){
+        let issueJiraLink = matches[1];
+        console.log('issueJiraLink: ', issueJiraLink);
+        return issueJiraLink;
+    }
 }
 
 // The actual (asynchronous) handler for command messages.
