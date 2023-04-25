@@ -187,9 +187,11 @@
 	/*** Details move to right **/
 	/* There are #peoplemodule, #datesmodule */
 	#viewissuesidebar {
-		padding: 0 0.3em!important;
+		padding: 0 0.3em !important;
 		position: relative;
-		top: 10em;
+/*		top: 10em; */
+/*		transform: translate(0, 10em); */
+		translate: 0 10em;
 		line-height: 0.9em;
 	}
 
@@ -201,7 +203,7 @@
 	}
 
 	/*
-    #details-module - That is all details of Issue including: "Custom description", "Test Case", "Epic link" +
+	#details-module - That is all details of Issue including: "Custom description", "Test Case", "Epic link" +
 	#issuedetails include only base common fields like: Type, Priority, Status…
 	*/
 	/* .issue-main-column #details-module { */
@@ -783,7 +785,7 @@
 
 	/* Fix footer to body overlapping */
 	.issue-body-content {
-		min-height: 600px;
+		min-height: 200px;
 	}
 
 	.links-list dt {
