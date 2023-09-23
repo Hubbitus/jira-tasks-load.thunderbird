@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "jira-tasks-load.thunderbird",
   "description": "For the JIRA issues change notification load in message itself full view of issue!",
-  "version": "1.1",
+  "version": "1.2",
   "author": "Pavel Alexeev <Pahan@Hubbitus.info>",
   "browser_specific_settings": {
     "gecko": {
