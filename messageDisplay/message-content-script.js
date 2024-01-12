@@ -57,13 +57,14 @@ async function extendMessage() {
         **/
     //    $.get("https://jira-new.gid.team/browse/DATA-1104")
         $.get(issueJiraLink)
-            .done(function( data ) {
+            .done(function(data) {
                 console.log('JIRA data received');
                 let div = $('<div id="jira-ext-content" style="display: flex;">');
                 let content = $('<html />').html(data);
 
                 div.append(content.find('style'));
                 div.append(content.find('link[type="text/css"]'));
+                div.append(content.find('link[rel="stylesheet"]'));
                 content.find('#ppm-wbs-issue-details-panel-biggantt, #checklistPanelRight, #activitymodule, #tempo-issue-view-panel').remove();
                 // Again add same style! To re-define changes from jira!
                 div.append($(`
