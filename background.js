@@ -41,7 +41,7 @@ async function getIssueJiraLink(messageId){
     let matches = rx.exec(html);
     if (!!matches){
         let issueJiraLink = matches[1];
-        console.log('issueJiraLink: ', issueJiraLink);
+        console.log('issueJiraLink:', issueJiraLink);
         return issueJiraLink;
     }
 }

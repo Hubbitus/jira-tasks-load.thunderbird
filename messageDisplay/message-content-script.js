@@ -34,6 +34,10 @@ async function extendMessage() {
                 .issue-body-content {
                     min-height: 200px !important;
                 }
+                .issue-body-content .module > .mod-header + .mod-content {
+                    margin-top: 15px !important;
+                }
+
                 /* Compact mail itself */
                 .spacer-10, .spacer-20, .spacer-30, .spacer-40, .spacer-50, .spacer-60 {
                     height: 0 !important;

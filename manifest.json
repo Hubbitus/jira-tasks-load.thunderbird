@@ -25,6 +25,6 @@
     "messagesRead",
     "messagesModify",
     "webRequest",
-    "https://jira-new.gid.team/*"
+    "<all_urls>"
   ]
 }
